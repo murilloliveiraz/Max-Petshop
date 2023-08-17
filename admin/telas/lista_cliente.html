@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/css/componentes/tabela.css">
+    <link rel="stylesheet" href="">
+    <title>Max Petshop</title>
+</head>
+<body>
+    <header class="cabecalho container">
+        <img src="../assets/images/Brown and Green Playful Animals & Pets Logo (1).png" alt="Logo Max Pet" class="cabecalho_logo">
+        <nav>
+            <ul class="cabecalho_lista_navegacao">
+                <li class="cabecalho_link"><a href="#">Dashboard</a></li>
+                <li class="cabecalho_link"><a href="#">Produtos</a></li>
+                <li class="cabecalho_link"><a href="#">Clientes</a></li>
+                <li class="cabecalho_link"><a href="#">Pets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="clientes-container">
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th class="tabela_coluna--p">Nome</th>
+                    <th class="tabela_coluna--p">Email</th>
+                    <th class="tabela_coluna--m tabela__linhamento--direita"><a href="cadastra_cliente.html" class="botao-simples botao-simples--adicionar">Novo Cliente</a></th>
+                </tr>
+            </thead>
+            <tbody data-tabela>
+                
+            </tbody>
+        </table>
+
+        <!-- <div class="modal-container modal--fechado">
+            <article class="modal">
+                <h2 class="modal_titulo">
+                    Excluir
+                </h2>
+                <button class="modal__fechar">X</button>
+                <p class="modal__texto">Deseja excluir essa entrada?</p>
+                <div class="modal__botao-container">
+                    <button class="modal__botal modal__botal--botao-confirmar"></button>
+                </div>
+            </article>
+        </div> -->
+    </main>
+
+    <!-- <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titulo">Cadastrar um Produto</h1>
+            <form action="#" class="flex flex--coluna">
+                <div class="input-container">
+                    <input type="text" name="nome" placeholder="Nome">
+                    <label for="nome" class="input-label">Nome</label>
+                    <span class="input-mensagem-erro">Mensagem genérica</span>
+                </div>
+            </form>
+        </section>
+    </main> -->
+
+    <script src="../service/clientes-service.js"></script>
+</body>
+</html>

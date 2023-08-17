@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../assets/css/componentes/tabela.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho container">
+        <img src="../assets/images/Brown and Green Playful Animals & Pets Logo (1).png" alt="Logo Max Pet" class="cabecalho_logo">
+        <nav>
+            <ul class="cabecalho_lista_navegacao">
+                <li class="cabecalho_link"><a href="#">Dashboard</a></li>
+                <li class="cabecalho_link"><a href="#">Produtos</a></li>
+                <li class="cabecalho_link"><a href="#">Clientes</a></li>
+                <li class="cabecalho_link"><a href="#">Pets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titulo">Edição</h1>
+                <form action="" class="flex flex--coluna" data-form>
+                    <div class="input-container">
+                        <label for="nome" class="input-label">Nome</label>
+                        <input type="text" name="nome" class="input" placeholder="Digite o seu Nome" id="nome" required data-nome>
+                        <span class="input-mensagem-erro">Esse campo não pode estar vazio.</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="email" class="input-label">Email</label>
+                        <input type="text" name="email" class="input" placeholder="Digite o seu Email" id="email" required data-email>
+                        <span class="input-mensagem-erro">Esse campo não pode estar vazio.</span>
+                    </div>
+                    <button type="submit" class="botao">Editar Cliente</button>
+                </form>
+        </section>
+    </main>
+</body>
+</html>

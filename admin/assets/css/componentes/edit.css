@@ -1,0 +1,23 @@
+.cadastro-cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    width: 600px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+}
+
+.cadastro-cartao__icone-concluido{
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+
+    background-image: url(../../images/check.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
