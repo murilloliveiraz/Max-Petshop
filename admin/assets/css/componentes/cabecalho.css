@@ -1,6 +1,6 @@
-.cabecalho{
+.cabecalho {
     background-color: var(--cor-contraste-claro);
-    border: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
     box-shadow: var(--sombra);
     display: flex;
     justify-content: space-between;
@@ -9,14 +9,14 @@
     margin-bottom: 2rem;
 }
 
-.cabecalho_logo{
-    width: 4.5rem;
-} 
+.cabecalho__logo {
+    width: 3rem;
+}
 
-.cabecalho_lista_navegacao{
+.cabecalho__lista-navegacao {
     display: flex;
 }
 
-.cabecalho_link {
+.cabecalho__link {
     margin-left: 2rem;
 }

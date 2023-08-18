@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-.botao-simples{
+.botao-simples {
     border: none;
     background-color: unset;
 }
@@ -24,4 +24,8 @@
 
 .botao-simples--excluir {
     color: var(--cor-aviso);
+}
+
+.botao-simples--editar {
+    color: var(--cor-sucesso);
 }

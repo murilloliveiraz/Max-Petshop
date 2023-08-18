@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/base/base.css">
-    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <title>Max Petshop | Clientes</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/lista_cliente.css">
     <link rel="stylesheet" href="../assets/css/componentes/tabela.css">
-    <link rel="stylesheet" href="">
-    <title>Max Petshop</title>
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+    <link rel="stylesheet" href="../assets/css/componentes/modal.css">
 </head>
 <body>
     <header class="cabecalho container">
-        <img src="../assets/images/Brown and Green Playful Animals & Pets Logo (1).png" alt="Logo Max Pet" class="cabecalho_logo">
+        <img src="../assets/images/Brown and Green Playful Animals & Pets Logo (1).png" alt="Logo Doguito" class="cabecalho__logo">
         <nav>
-            <ul class="cabecalho_lista_navegacao">
-                <li class="cabecalho_link"><a href="#">Dashboard</a></li>
-                <li class="cabecalho_link"><a href="#">Produtos</a></li>
-                <li class="cabecalho_link"><a href="#">Clientes</a></li>
-                <li class="cabecalho_link"><a href="#">Pets</a></li>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="#">Dashboard</a></li>
+                <li class="cabecalho__link"><a href="#">Produtos</a></li>
+                <li class="cabecalho__link"><a href="#">Clientes</a></li>
+                <li class="cabecalho__link"><a href="#">Pets</a></li>
             </ul>
         </nav>
     </header>
@@ -28,9 +30,9 @@
         <table class="tabela">
             <thead>
                 <tr>
-                    <th class="tabela_coluna--p">Nome</th>
-                    <th class="tabela_coluna--p">Email</th>
-                    <th class="tabela_coluna--m tabela__linhamento--direita"><a href="cadastra_cliente.html" class="botao-simples botao-simples--adicionar">Novo Cliente</a></th>
+                    <th class="tabela__coluna--p">Nome</th>
+                    <th class="tabela__coluna--g">Email</th>
+                    <th class="tabela__coluna--m tabela__alinhamento--direita"><a href="./cadastra_cliente.html" class="botao-simples botao-simples--adicionar">Novo Cliente</a></th>
                 </tr>
             </thead>
             <tbody data-tabela>
@@ -38,33 +40,9 @@
             </tbody>
         </table>
 
-        <!-- <div class="modal-container modal--fechado">
-            <article class="modal">
-                <h2 class="modal_titulo">
-                    Excluir
-                </h2>
-                <button class="modal__fechar">X</button>
-                <p class="modal__texto">Deseja excluir essa entrada?</p>
-                <div class="modal__botao-container">
-                    <button class="modal__botal modal__botal--botao-confirmar"></button>
-                </div>
-            </article>
-        </div> -->
     </main>
+    <script src="../service/cliente-service.js"></script>
 
-    <!-- <main class="container flex flex--centro flex--coluna">
-        <section class="cartao cadastro">
-            <h1 class="cartao__titulo">Cadastrar um Produto</h1>
-            <form action="#" class="flex flex--coluna">
-                <div class="input-container">
-                    <input type="text" name="nome" placeholder="Nome">
-                    <label for="nome" class="input-label">Nome</label>
-                    <span class="input-mensagem-erro">Mensagem genérica</span>
-                </div>
-            </form>
-        </section>
-    </main> -->
+</body> 
 
-    <script src="../service/clientes-service.js"></script>
-</body>
 </html>

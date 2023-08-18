@@ -1,41 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/base/base.css">
-    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
-    <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
-    <link rel="stylesheet" href="../assets/css/componentes/tabela.css">
-    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
-    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <title>Max Petshop | Cadastro concluído</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../assets/css/componentes/edit.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/cadastro_concluido.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
 </head>
 <body>
     <header class="cabecalho container">
-        <img src="../assets/images/Brown and Green Playful Animals & Pets Logo (1).png" alt="Logo Max Pet" class="cabecalho_logo">
+        <img src="../assets/images/Brown and Green Playful Animals & Pets Logo (1).png" alt="Logo Doguito" class="cabecalho__logo">
         <nav>
-            <ul class="cabecalho_lista_navegacao">
-                <li class="cabecalho_link"><a href="#">Dashboard</a></li>
-                <li class="cabecalho_link"><a href="#">Produtos</a></li>
-                <li class="cabecalho_link"><a href="#">Clientes</a></li>
-                <li class="cabecalho_link"><a href="#">Pets</a></li>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="#">Dashboard</a></li>
+                <li class="cabecalho__link"><a href="#">Produtos</a></li>
+                <li class="cabecalho__link"><a href="./lista_cliente.html">Clientes</a></li>
+                <li class="cabecalho__link"><a href="#">Pets</a></li>
             </ul>
         </nav>
     </header>
-
-    <main class="container flex flex--centro flex--coluna">              
-                    <div class="cadastro-cartao">
-                        <div class="cadastro-cartao__icone-concluido">
-                        </div>
-                        <div class="input-container">
-                            <h1>Cliente cadastrado com sucesso!</h1>
-                        </div>
-                        <button type="submit" class="botao">Voltar para clientes</button>
-                    </div>
+    <main class="container flex flex--coluna flex--centro">
+        <section class="cadastro-cartao cartao">
+            <span class="cadastro-cartao__icone-concluido"></span>
+            <h1 class="cadastro-cartao__titulo cartao__titulo">Cadastro realizado com sucesso!</h1>
+            <a href="./lista_cliente.html" class="botao">Voltar para clientes</a>
+        </section>
     </main>
 </body>
 </html>
