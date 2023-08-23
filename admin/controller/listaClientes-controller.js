@@ -1,3 +1,13 @@
+import { clienteService } from '../service/cliente-service'
+
+clienteService.listaClientes()
+.then(
+    data => {
+        data.forEach(element => {
+            tabela.appendChild(criarNovaLinha(element.nome,element.email));
+        });
+})
+
 const criarNovaLinha = (nome, email) => {
     const linhaNovoCliente = document.createElement('tr');
     const conteudo = ` <td class="td" data-td>${nome}</td>
@@ -12,3 +22,19 @@ const criarNovaLinha = (nome, email) => {
 }
 
 const tabela = document.querySelector('[data-tabela]');
+// const promise = new Promise((resolve, reject) => {
+    //     const http = new XMLHttpRequest();
+    
+    //     http.open('GET', 'http://localhost:3000/profile');
+    
+    //     http.onload = () => {
+    //         if(http.status >= 400){
+    //             reject(JSON.parse(http.response));
+    //         } else {
+    //             resolve(JSON.parse(http.response));
+     //         }
+     //     }
+    //   http.send();
+     // })
+    // console.log(promise);
+    // return promise;
