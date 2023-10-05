@@ -16,7 +16,7 @@ const criaCliente = (nome, email) => {
         },
         body: JSON.stringify({
             nome: nome,
-            email: email
+            email: email,
         })
     })
     .then( resposta => {
